@@ -1,0 +1,115 @@
+{
+  "project": {
+    "id": "proj-001",
+    "name": "我的项目",
+    "description": "项目描述",
+    "createdAt": "2026-04-06T00:00:00Z",
+    "updatedAt": "2026-04-06T00:00:00Z"
+  },
+  "tasks": [
+    {
+      "id": "task-001",
+      "title": "需求分析",
+      "description": "collecting and cleaning users' documents",
+      "status": "completed",
+      "priority": "high",
+      "category": "规划",
+      "assignee": "张三",
+      "tags": ["文档", "需求"],
+      "createdAt": "2026-04-01T09:00:00Z",
+      "dueDate": "2026-04-03T18:00:00Z",
+      "completedAt": "2026-04-03T16:30:00Z",
+      "subtasks": [
+        { "id": "sub-001-1", "title": "用户访谈", "done": true },
+        { "id": "sub-001-2", "title": "竞品分析", "done": true }
+      ],
+      "comments": [
+        {
+          "id": "cmt-001",
+          "author": "李四",
+          "content": "已完成初稿，请审阅",
+          "createdAt": "2026-04-03T14:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "task-002",
+      "title": "UI 设计",
+      "description": "完成主界面及核心功能页面设计",
+      "status": "in_progress",
+      "priority": "high",
+      "category": "设计",
+      "assignee": "王五",
+      "tags": ["设计", "UI/UX"],
+      "createdAt": "2026-04-03T10:00:00Z",
+      "dueDate": "2026-04-08T18:00:00Z",
+      "completedAt": null,
+      "subtasks": [
+        { "id": "sub-002-1", "title": "线框图", "done": true },
+        { "id": "sub-002-2", "title": "高保真原型", "done": false },
+        { "id": "sub-002-3", "title": "设计规范文档", "done": false }
+      ],
+      "comments": []
+    },
+    {
+      "id": "task-003",
+      "title": "后端 API 开发",
+      "description": "实现用户认证、数据 CRUD 接口",
+      "status": "todo",
+      "priority": "medium",
+      "category": "开发",
+      "assignee": "赵六",
+      "tags": ["后端", "API"],
+      "createdAt": "2026-04-06T08:00:00Z",
+      "dueDate": "2026-04-15T18:00:00Z",
+      "completedAt": null,
+      "subtasks": [
+        { "id": "sub-003-1", "title": "用户认证模块", "done": false },
+        { "id": "sub-003-2", "title": "任务 CRUD 接口", "done": false },
+        { "id": "sub-003-3", "title": "单元测试", "done": false }
+      ],
+      "comments": []
+    },
+    {
+      "id": "task-004",
+      "title": "前端开发",
+      "description": "根据设计稿实现前端页面",
+      "status": "todo",
+      "priority": "medium",
+      "category": "开发",
+      "assignee": "张三",
+      "tags": ["前端", "React"],
+      "createdAt": "2026-04-06T08:00:00Z",
+      "dueDate": "2026-04-18T18:00:00Z",
+      "completedAt": null,
+      "subtasks": [],
+      "comments": []
+    },
+    {
+      "id": "task-005",
+      "title": "测试与修复",
+      "description": "功能测试、性能测试及 Bug 修复",
+      "status": "todo",
+      "priority": "low",
+      "category": "测试",
+      "assignee": "李四",
+      "tags": ["测试", "QA"],
+      "createdAt": "2026-04-06T08:00:00Z",
+      "dueDate": "2026-04-22T18:00:00Z",
+      "completedAt": null,
+      "subtasks": [],
+      "comments": []
+    }
+  ],
+  "members": [
+    { "id": "user-001", "name": "张三", "role": "前端开发" },
+    { "id": "user-002", "name": "李四", "role": "测试工程师" },
+    { "id": "user-003", "name": "王五", "role": "UI 设计师" },
+    { "id": "user-004", "name": "赵六", "role": "后端开发" }
+  ],
+  "meta": {
+    "statusOptions": ["todo", "in_progress", "completed", "cancelled"],
+    "priorityOptions": ["low", "medium", "high", "urgent"],
+    "categories": ["规划", "设计", "开发", "测试", "运维"]
+  }
+}
