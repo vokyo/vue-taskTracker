@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  .kanban-col {
+    @apply flex min-h-[20rem] flex-col rounded-[28px] border border-slate-200 bg-white shadow-sm;
+  }
+
+  .task-card {
+    @apply cursor-pointer rounded-3xl border border-slate-200 bg-white p-5 shadow-sm transition duration-200;
+  }
+
+  .task-card:hover {
+    @apply -translate-y-0.5 border-slate-300;
+    box-shadow: 0 22px 50px -28px rgba(15, 23, 42, 0.48);
+  }
+
+  .task-card:focus-visible {
+    @apply outline-none ring-2 ring-sky-400;
+  }
+
+  .badge-urgent {
+    color: #e24b4a;
+    background-color: rgba(226, 75, 74, 0.12);
+    box-shadow: inset 0 0 0 1px rgba(226, 75, 74, 0.2);
+  }
+
+  .badge-high {
+    color: #d85a30;
+    background-color: rgba(216, 90, 48, 0.12);
+    box-shadow: inset 0 0 0 1px rgba(216, 90, 48, 0.2);
+  }
+
+  .badge-medium {
+    color: #ba7517;
+    background-color: rgba(186, 117, 23, 0.12);
+    box-shadow: inset 0 0 0 1px rgba(186, 117, 23, 0.2);
+  }
+
+  .badge-low {
+    color: #639922;
+    background-color: rgba(99, 153, 34, 0.12);
+    box-shadow: inset 0 0 0 1px rgba(99, 153, 34, 0.2);
+  }
+}
+
+.slide-enter-active .task-drawer-panel,
+.slide-leave-active .task-drawer-panel {
+  transition: transform 0.28s ease;
+}
+
+.slide-enter-from .task-drawer-panel,
+.slide-leave-to .task-drawer-panel {
+  transform: translateX(100%);
+}
+
+.slide-enter-active .task-drawer-overlay,
+.slide-leave-active .task-drawer-overlay {
+  transition: opacity 0.28s ease;
+}
+
+.slide-enter-from .task-drawer-overlay,
+.slide-leave-to .task-drawer-overlay {
+  opacity: 0;
+}
+
+@tailwind utilities;

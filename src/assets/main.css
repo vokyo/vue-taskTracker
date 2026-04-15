@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  .kanban-col {
+    @apply flex min-h-[20rem] flex-col rounded-[28px] border border-slate-200 bg-white shadow-sm;
+  }
+
+  .task-card {
+    @apply cursor-grab rounded-3xl border border-slate-200 bg-white p-5 shadow-sm transition duration-200;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+
+  .task-card:hover {
+    @apply -translate-y-0.5 border-slate-300;
+    box-shadow: 0 22px 50px -28px rgba(15, 23, 42, 0.48);
+  }
+
+  .task-card * {
+    pointer-events: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .task-card:focus-visible {
+    @apply outline-none ring-2 ring-sky-400;
+  }
+
+  .task-card:active {
+    @apply cursor-grabbing;
+  }
+
+  .task-list {
+    @apply min-h-[14rem];
+  }
+
+  .badge-urgent {
+    color: #e24b4a;
+    background-color: rgba(226, 75, 74, 0.12);
+    box-shadow: inset 0 0 0 1px rgba(226, 75, 74, 0.2);
+  }
+
+  .badge-high {
+    color: #d85a30;
+    background-color: rgba(216, 90, 48, 0.12);
+    box-shadow: inset 0 0 0 1px rgba(216, 90, 48, 0.2);
+  }
+
+  .badge-medium {
+    color: #ba7517;
+    background-color: rgba(186, 117, 23, 0.12);
+    box-shadow: inset 0 0 0 1px rgba(186, 117, 23, 0.2);
+  }
+
+  .badge-low {
+    color: #639922;
+    background-color: rgba(99, 153, 34, 0.12);
+    box-shadow: inset 0 0 0 1px rgba(99, 153, 34, 0.2);
+  }
+
+  .status-pill {
+    @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold;
+  }
+
+  .status-todo {
+    @apply bg-status-todo/10 text-status-todo;
+  }
+
+  .status-in_progress {
+    @apply bg-status-in_progress/10 text-status-in_progress;
+  }
+
+  .status-completed {
+    @apply bg-status-completed/10 text-status-completed;
+  }
+
+  .status-cancelled {
+    @apply bg-status-cancelled/10 text-status-cancelled;
+  }
+
+  /* Placeholder shown where the dragged card used to be */
+  .drag-ghost {
+    @apply opacity-40 bg-blue-50 border-2 border-dashed border-blue-300 rounded-lg;
+  }
+
+  /* Card state while selected and ready to drag */
+  .drag-chosen {
+    @apply shadow-lg scale-[1.02] rotate-1;
+  }
+
+  /* Card state while actively dragging */
+  .drag-dragging {
+    @apply opacity-90 shadow-xl cursor-grabbing;
+  }
+
+  /* Highlight the drop target column while hovering */
+  .kanban-col.drag-over {
+    @apply bg-blue-50 border-2 border-dashed border-blue-300;
+  }
+}
+
+.slide-enter-active .task-drawer-panel,
+.slide-leave-active .task-drawer-panel {
+  transition: transform 0.28s ease;
+}
+
+.slide-enter-from .task-drawer-panel,
+.slide-leave-to .task-drawer-panel {
+  transform: translateX(100%);
+}
+
+.slide-enter-active .task-drawer-overlay,
+.slide-leave-active .task-drawer-overlay {
+  transition: opacity 0.28s ease;
+}
+
+.slide-enter-from .task-drawer-overlay,
+.slide-leave-to .task-drawer-overlay {
+  opacity: 0;
+}
+
+@tailwind utilities;

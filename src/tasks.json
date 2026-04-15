@@ -1,0 +1,211 @@
+{
+  "projects": [
+    {
+      "id": "proj-001",
+      "name": "Product Launch v2.0",
+      "description": "Coordinate design, backend delivery, and rollout for the next product release.",
+      "color": "#2563EB",
+      "createdAt": "2026-04-01"
+    },
+    {
+      "id": "proj-002",
+      "name": "Marketing Site Refresh",
+      "description": "Rebuild the public website to match the new brand direction.",
+      "color": "#16A34A",
+      "createdAt": "2026-04-05"
+    },
+    {
+      "id": "proj-003",
+      "name": "Student Portal Upgrade",
+      "description": "Improve operations and support workflows for the internal student platform.",
+      "color": "#F97316",
+      "createdAt": "2026-04-07"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-001",
+      "projectId": "proj-001",
+      "title": "Requirements Review",
+      "description": "Collect the latest stakeholder requests and lock the scope for the release.",
+      "status": "in_progress",
+      "priority": "high",
+      "category": "Planning",
+      "assignee": "Alex Chen",
+      "tags": [
+        "documentation",
+        "research"
+      ],
+      "dueDate": "2026-04-03",
+      "subtasks": [
+        {
+          "title": "Run stakeholder interviews",
+          "done": true
+        },
+        {
+          "title": "Confirm release scope",
+          "done": false
+        }
+      ],
+      "comments": [
+        {
+          "author": "Priya Singh",
+          "content": "The first draft is ready for review.",
+          "time": "2026-04-03"
+        }
+      ]
+    },
+    {
+      "id": "task-002",
+      "projectId": "proj-001",
+      "title": "UI Design System",
+      "description": "Finish the shared layout, color, and interaction patterns for the launch screens.",
+      "status": "completed",
+      "priority": "high",
+      "category": "Design",
+      "assignee": "Priya Singh",
+      "tags": [
+        "design",
+        "ui"
+      ],
+      "dueDate": "2026-04-08",
+      "subtasks": [
+        {
+          "title": "Wireframe the main flow",
+          "done": true
+        },
+        {
+          "title": "Build the high-fidelity prototype",
+          "done": true
+        },
+        {
+          "title": "Publish the design guidelines",
+          "done": true
+        }
+      ],
+      "comments": []
+    },
+    {
+      "id": "task-003",
+      "projectId": "proj-001",
+      "title": "Authentication API",
+      "description": "Implement login, session refresh, and core CRUD endpoints for the release.",
+      "status": "todo",
+      "priority": "medium",
+      "category": "Development",
+      "assignee": "Mateo Cruz",
+      "tags": [
+        "backend",
+        "api"
+      ],
+      "dueDate": "2026-04-15",
+      "subtasks": [
+        {
+          "title": "Build the login module",
+          "done": true
+        },
+        {
+          "title": "Ship the task CRUD routes",
+          "done": false
+        },
+        {
+          "title": "Add unit tests",
+          "done": false
+        }
+      ],
+      "comments": []
+    },
+    {
+      "id": "task-004",
+      "projectId": "proj-002",
+      "title": "Homepage Rewrite",
+      "description": "Rebuild the homepage hero, feature sections, and campaign call-to-action blocks.",
+      "status": "cancelled",
+      "priority": "medium",
+      "category": "Development",
+      "assignee": "Jordan Lee",
+      "tags": [
+        "frontend",
+        "marketing"
+      ],
+      "dueDate": "2026-04-18",
+      "subtasks": [],
+      "comments": []
+    },
+    {
+      "id": "task-005",
+      "projectId": "proj-002",
+      "title": "Content QA Pass",
+      "description": "Review messaging, links, and layout behavior before the refreshed site goes live.",
+      "status": "todo",
+      "priority": "low",
+      "category": "Testing",
+      "assignee": "Taylor Brooks",
+      "tags": [
+        "qa",
+        "content"
+      ],
+      "dueDate": "2026-04-22",
+      "subtasks": [],
+      "comments": []
+    },
+    {
+      "id": "task-006",
+      "projectId": "proj-003",
+      "title": "Release Infrastructure",
+      "description": "Prepare the production environment, deployment pipeline, and rollout checklist.",
+      "status": "in_progress",
+      "priority": "urgent",
+      "category": "Operations",
+      "assignee": "Morgan Patel",
+      "tags": [
+        "devops",
+        "release"
+      ],
+      "dueDate": "2026-04-25",
+      "subtasks": [
+        {
+          "title": "Configure the production environment",
+          "done": false
+        },
+        {
+          "title": "Finish the CI/CD pipeline",
+          "done": false
+        }
+      ],
+      "comments": []
+    },
+    {
+      "id": "task-007",
+      "projectId": "proj-003",
+      "title": "Support Playbook",
+      "description": "Document onboarding, escalation steps, and support handoff expectations for the upgraded portal.",
+      "status": "completed",
+      "priority": "low",
+      "category": "Planning",
+      "assignee": "Sam Rivera",
+      "tags": [
+        "documentation",
+        "support"
+      ],
+      "dueDate": "2026-04-20",
+      "subtasks": [
+        {
+          "title": "Draft the support checklist",
+          "done": true
+        },
+        {
+          "title": "Review the escalation flow",
+          "done": true
+        }
+      ],
+      "comments": [
+        {
+          "author": "Morgan Patel",
+          "content": "This is ready for the operations review.",
+          "time": "2026-04-19"
+        }
+      ]
+    }
+  ]
+}
