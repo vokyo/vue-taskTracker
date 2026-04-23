@@ -206,6 +206,39 @@
           "time": "2026-04-19"
         }
       ]
+    },
+    {
+      "id": "task-008",
+      "projectId": "proj-002",
+      "title": "Launch Metrics Snapshot",
+      "description": "Add the latest campaign KPI snapshot so the refreshed marketing site has a current reporting baseline.",
+      "status": "in_progress",
+      "priority": "medium",
+      "category": "Testing",
+      "assignee": "Harper Kim",
+      "tags": [
+        "analytics",
+        "marketing",
+        "reporting"
+      ],
+      "dueDate": "2026-04-26",
+      "subtasks": [
+        {
+          "title": "Collect this week's traffic numbers",
+          "done": true
+        },
+        {
+          "title": "Validate conversion totals with marketing ops",
+          "done": false
+        }
+      ],
+      "comments": [
+        {
+          "author": "Taylor Brooks",
+          "content": "Initial KPI export is attached and ready for the final review.",
+          "time": "2026-04-23"
+        }
+      ]
     }
   ]
 }
